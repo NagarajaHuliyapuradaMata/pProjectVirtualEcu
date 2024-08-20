@@ -8,6 +8,7 @@ cc_binary(
    ,  deps = [
             "//repo_projects/pProjectFull/main_LATEST/source/SwcServiceStartup:SwcServiceStartup"
          ,  "//repo_projects/pProjectFull/main_LATEST/source/SwcServiceEcuM:SwcServiceEcuM"
+         ,  "//repo_projects/pProjectFull/main_LATEST/source/SwcServiceOs:SwcServiceOs"
       ]
 )
 
