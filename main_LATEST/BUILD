@@ -16,7 +16,7 @@ cc_library(
 cc_library(
       name = "aapFunctionalCluster_CommunicationManagement"
    ,  srcs = ["source/aapFunctionalCluster_CommunicationManagement/aapFunctionalCluster_CommunicationManagement.cpp"]
-#  ,  deps = ["//repo_projects/pProjectFull/main_LATEST:SwcServiceEcuM"]
+#  ,  deps = ["//repo_projects/pProjectVirtualEcu/main_LATEST:SwcServiceEcuM"]
    ,  hdrs = [
             "source/aapFunctionalCluster_CommunicationManagement/interface_CommunicationManagement_VerificationStatusConfigurationByDataId.hpp"
          ,  "source/aapFunctionalCluster_CommunicationManagement/interface_CommunicationManagement_VerificationStatusConfigurationByFreshnessId.hpp"
@@ -29,7 +29,7 @@ cc_library(
 cc_library(
       name = "aapFunctionalCluster_Core"
    ,  srcs = ["source/aapFunctionalCluster_Core/aapFunctionalCluster_Core.cpp"]
-#  ,  deps = ["//repo_projects/pProjectFull/main_LATEST:SwcServiceEcuM"]
+#  ,  deps = ["//repo_projects/pProjectVirtualEcu/main_LATEST:SwcServiceEcuM"]
    ,  hdrs = [
             "source/aapFunctionalCluster_Core/interface_Core.hpp"
       ]
@@ -40,7 +40,7 @@ cc_library(
 cc_library(
       name = "aapFunctionalCluster_Cryptography"
    ,  srcs = ["source/aapFunctionalCluster_Cryptography/aapFunctionalCluster_Cryptography.cpp"]
-#  ,  deps = ["//repo_projects/pProjectFull/main_LATEST:SwcServiceEcuM"]
+#  ,  deps = ["//repo_projects/pProjectVirtualEcu/main_LATEST:SwcServiceEcuM"]
    ,  hdrs = [
             "source/aapFunctionalCluster_Cryptography/interface_Cryptography_AuthCipherCtx.hpp"
          ,  "source/aapFunctionalCluster_Cryptography/interface_Cryptography_BlockService.hpp"
@@ -91,9 +91,9 @@ cc_library(
       name = "aapFunctionalCluster_DiagnosticManagement"
    ,  srcs = ["source/aapFunctionalCluster_DiagnosticManagement/aapFunctionalCluster_DiagnosticManagement.cpp"]
    ,  deps = [
-            "//repo_projects/pProjectFull/main_LATEST:common"
-         ,  "//repo_projects/pProjectFull/main_LATEST:SwcServiceEcuM"
-         ,  "//repo_projects/pProjectFull/main_LATEST:SwcServiceEthTp"
+            "//repo_projects/pProjectVirtualEcu/main_LATEST:common"
+         ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:SwcServiceEcuM"
+         ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:SwcServiceEthTp"
       ]
    ,  hdrs = [
             "source/aapFunctionalCluster_DiagnosticManagement/infClientSwcServiceDcm.hpp"
@@ -118,10 +118,10 @@ cc_library(
       name = "aapFunctionalCluster_ExecutionManagement"
    ,  srcs = ["source/aapFunctionalCluster_ExecutionManagement/aapFunctionalCluster_ExecutionManagement.cpp"]
    ,  deps = [
-            "//repo_projects/pProjectFull/main_LATEST:common"
-         ,  "//repo_projects/pProjectFull/main_LATEST:aapFunctionalCluster_DiagnosticManagement"
-         ,  "//repo_projects/pProjectFull/main_LATEST:SwcServiceEcuM"
-         ,  "//repo_projects/pProjectFull/main_LATEST:SwcServiceEthTp"
+            "//repo_projects/pProjectVirtualEcu/main_LATEST:common"
+         ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:aapFunctionalCluster_DiagnosticManagement"
+         ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:SwcServiceEcuM"
+         ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:SwcServiceEthTp"
       ]
    ,  hdrs = [
             "source/aapFunctionalCluster_ExecutionManagement/interface_ExecutionManagement_ExecutionClient.hpp"
@@ -133,7 +133,7 @@ cc_library(
 cc_library(
       name = "aapFunctionalCluster_Firewall"
    ,  srcs = ["source/aapFunctionalCluster_Firewall/aapFunctionalCluster_Firewall.cpp"]
-#  ,  deps = ["//repo_projects/pProjectFull/main_LATEST:SwcServiceEcuM"]
+#  ,  deps = ["//repo_projects/pProjectVirtualEcu/main_LATEST:SwcServiceEcuM"]
    ,  hdrs = [
             "source/aapFunctionalCluster_Firewall/interface_Firewall_FirewallStateSwitch.hpp"
       ]
@@ -144,7 +144,7 @@ cc_library(
 cc_library(
       name       = "aapFunctionalCluster_IntrusionDetectionSystemManager"
    ,  srcs       = ["source/aapFunctionalCluster_IntrusionDetectionSystemManager/aapFunctionalCluster_IntrusionDetectionSystemManager.cpp"]
-#  ,  deps       = ["//repo_projects/pProjectFull/main_LATEST:SwcServiceEcuM"]
+#  ,  deps       = ["//repo_projects/pProjectVirtualEcu/main_LATEST:SwcServiceEcuM"]
    ,  hdrs       = [
             "source/aapFunctionalCluster_IntrusionDetectionSystemManager/interface_IntrusionDetectionSystemManager_EventReporter.hpp"
       ]
@@ -156,7 +156,7 @@ cc_library(
       name       = "aapFunctionalCluster_LogAndTrace"
    ,  srcs       = ["source/aapFunctionalCluster_LogAndTrace/aapFunctionalCluster_LogAndTrace.cpp"]
    ,  deps       = [
-            "//repo_projects/pProjectFull/main_LATEST:common"
+            "//repo_projects/pProjectVirtualEcu/main_LATEST:common"
       ]
    ,  hdrs       = [
             "source/aapFunctionalCluster_LogAndTrace/interface_LogAndTrace.hpp"
@@ -170,7 +170,7 @@ cc_library(
 cc_library(
       name       = "aapFunctionalCluster_NetworkManagement"
    ,  srcs       = ["source/aapFunctionalCluster_NetworkManagement/aapFunctionalCluster_NetworkManagement.cpp"]
-#  ,  deps       = ["//repo_projects/pProjectFull/main_LATEST:SwcServiceEcuM"]
+#  ,  deps       = ["//repo_projects/pProjectVirtualEcu/main_LATEST:SwcServiceEcuM"]
    ,  hdrs       = [
             "source/aapFunctionalCluster_NetworkManagement/interface_NetworkManagement_NetworkHandle.hpp"
       ]
@@ -182,7 +182,7 @@ cc_library(
       name       = "aapFunctionalCluster_Persistency"
    ,  srcs       = ["source/aapFunctionalCluster_Persistency/aapFunctionalCluster_Persistency.cpp"]
    ,  deps       = [
-            "//repo_projects/pProjectFull/main_LATEST:common"
+            "//repo_projects/pProjectVirtualEcu/main_LATEST:common"
       ]
    ,  hdrs       = [
             "source/aapFunctionalCluster_Persistency/interface_Persistency_FileStorage.hpp"
@@ -198,7 +198,7 @@ cc_library(
 cc_library(
       name       = "aapFunctionalCluster_PlatformHealthManagement"
    ,  srcs       = ["source/aapFunctionalCluster_PlatformHealthManagement/aapFunctionalCluster_PlatformHealthManagement.cpp"]
-#  ,  deps       = ["//repo_projects/pProjectFull/main_LATEST:SwcServiceEcuM"]
+#  ,  deps       = ["//repo_projects/pProjectVirtualEcu/main_LATEST:SwcServiceEcuM"]
    ,  hdrs       = [
             "source/aapFunctionalCluster_PlatformHealthManagement/interface_PlatformHealthManagement_RecoveryAction.hpp"
          ,  "source/aapFunctionalCluster_PlatformHealthManagement/interface_PlatformHealthManagement_SupervisedEntity.hpp"
@@ -210,7 +210,7 @@ cc_library(
 cc_library(
       name       = "aapFunctionalCluster_RawDataStream"
    ,  srcs       = ["source/aapFunctionalCluster_RawDataStream/aapFunctionalCluster_RawDataStream.cpp"]
-#  ,  deps       = ["//repo_projects/pProjectFull/main_LATEST:SwcServiceEcuM"]
+#  ,  deps       = ["//repo_projects/pProjectVirtualEcu/main_LATEST:SwcServiceEcuM"]
    ,  hdrs       = [
             "source/aapFunctionalCluster_RawDataStream/interface_RawDataStream_RawDataStreamClient.hpp"
          ,  "source/aapFunctionalCluster_RawDataStream/interface_RawDataStream_RawDataStreamServer.hpp"
@@ -222,7 +222,7 @@ cc_library(
 cc_library(
       name       = "aapFunctionalCluster_Registry"
    ,  srcs       = ["source/aapFunctionalCluster_Registry/aapFunctionalCluster_Registry.cpp"]
-#  ,  deps       = ["//repo_projects/pProjectFull/main_LATEST:SwcServiceEcuM"]
+#  ,  deps       = ["//repo_projects/pProjectVirtualEcu/main_LATEST:SwcServiceEcuM"]
    ,  hdrs       = [
             "source/aapFunctionalCluster_Registry/interface_Registry_ManifestAccessor.hpp"
       ]
@@ -234,7 +234,7 @@ cc_library(
       name       = "aapFunctionalCluster_StateManagement"
    ,  srcs       = ["source/aapFunctionalCluster_StateManagement/aapFunctionalCluster_StateManagement.cpp"]
    ,  deps       = [
-            "//repo_projects/pProjectFull/main_LATEST:common"
+            "//repo_projects/pProjectVirtualEcu/main_LATEST:common"
       ]
    ,  hdrs       = [
             "source/aapFunctionalCluster_StateManagement/interface_StateManagement_EcuResetRequest.hpp"
@@ -253,7 +253,7 @@ cc_library(
       name       = "aapFunctionalCluster_TimeSynchronization"
    ,  srcs       = ["source/aapFunctionalCluster_TimeSynchronization/aapFunctionalCluster_TimeSynchronization.cpp"]
    ,  deps       = [
-            "//repo_projects/pProjectFull/main_LATEST:common"
+            "//repo_projects/pProjectVirtualEcu/main_LATEST:common"
       ]
    ,  hdrs       = [
             "source/aapFunctionalCluster_TimeSynchronization/interface_TimeSynchronization_OffsetTimeBaseProvider.hpp"
@@ -269,7 +269,7 @@ cc_library(
       name       = "aapFunctionalCluster_UpdateAndConfigurationManagement"
    ,  srcs       = ["source/aapFunctionalCluster_UpdateAndConfigurationManagement/aapFunctionalCluster_UpdateAndConfigurationManagement.cpp"]
    ,  deps       = [
-            "//repo_projects/pProjectFull/main_LATEST:common"
+            "//repo_projects/pProjectVirtualEcu/main_LATEST:common"
       ]
    ,  hdrs       = [
             "source/aapFunctionalCluster_UpdateAndConfigurationManagement/interface_UpdateAndConfigurationManagement_PackageManagement.hpp"
@@ -282,7 +282,7 @@ cc_library(
       name       = "aapFunctionalCluster_VehicleUpdateAndConfigurationManagement"
    ,  srcs       = ["source/aapFunctionalCluster_VehicleUpdateAndConfigurationManagement/aapFunctionalCluster_VehicleUpdateAndConfigurationManagement.cpp"]
    ,  deps       = [
-            "//repo_projects/pProjectFull/main_LATEST:common"
+            "//repo_projects/pProjectVirtualEcu/main_LATEST:common"
       ]
    ,  hdrs       = [
             "source/aapFunctionalCluster_VehicleUpdateAndConfigurationManagement/interface_VehicleUpdateAndConfigurationManagement_VehicleDriverApplication.hpp"
@@ -297,7 +297,7 @@ cc_library(
       name = "SwcServiceEcuM"
    ,  srcs = ["source/SwcServiceEcuM/SwcServiceEcuM.cpp"]
    ,  deps = [
-            "//repo_projects/pProjectFull/main_LATEST:common"
+            "//repo_projects/pProjectVirtualEcu/main_LATEST:common"
       ]
    ,  hdrs = [
             "source/SwcServiceEcuM/infClientSwcServiceEcuM.hpp"
@@ -310,7 +310,7 @@ cc_library(
       name = "SwcServiceEthTp"
    ,  srcs = ["source/SwcServiceEthTp/SwcServiceEthTp.cpp"]
    ,  deps = [
-            "//repo_projects/pProjectFull/main_LATEST:common"
+            "//repo_projects/pProjectVirtualEcu/main_LATEST:common"
       ]
    ,  hdrs = [
             "source/SwcServiceEthTp/infClientSwcServiceEthTp.hpp"
@@ -320,28 +320,28 @@ cc_library(
 )
 
 cc_binary(
-      name = "pProjectFull_main_LATEST"
+      name = "pProjectVirtualEcu_main_LATEST"
    ,  deps = [
-            "//repo_projects/pProjectFull/main_LATEST:common"
-         ,  "//repo_projects/pProjectFull/main_LATEST:aapFunctionalCluster_CommunicationManagement"
-         ,  "//repo_projects/pProjectFull/main_LATEST:aapFunctionalCluster_Core"
-         ,  "//repo_projects/pProjectFull/main_LATEST:aapFunctionalCluster_Cryptography"
-         ,  "//repo_projects/pProjectFull/main_LATEST:aapFunctionalCluster_DiagnosticManagement"
-         ,  "//repo_projects/pProjectFull/main_LATEST:aapFunctionalCluster_ExecutionManagement"
-         ,  "//repo_projects/pProjectFull/main_LATEST:aapFunctionalCluster_Firewall"
-         ,  "//repo_projects/pProjectFull/main_LATEST:aapFunctionalCluster_IntrusionDetectionSystemManager"
-         ,  "//repo_projects/pProjectFull/main_LATEST:aapFunctionalCluster_LogAndTrace"
-         ,  "//repo_projects/pProjectFull/main_LATEST:aapFunctionalCluster_NetworkManagement"
-         ,  "//repo_projects/pProjectFull/main_LATEST:aapFunctionalCluster_Persistency"
-         ,  "//repo_projects/pProjectFull/main_LATEST:aapFunctionalCluster_PlatformHealthManagement"
-         ,  "//repo_projects/pProjectFull/main_LATEST:aapFunctionalCluster_RawDataStream"
-         ,  "//repo_projects/pProjectFull/main_LATEST:aapFunctionalCluster_Registry"
-         ,  "//repo_projects/pProjectFull/main_LATEST:aapFunctionalCluster_StateManagement"
-         ,  "//repo_projects/pProjectFull/main_LATEST:aapFunctionalCluster_TimeSynchronization"
-         ,  "//repo_projects/pProjectFull/main_LATEST:aapFunctionalCluster_UpdateAndConfigurationManagement"
-         ,  "//repo_projects/pProjectFull/main_LATEST:aapFunctionalCluster_VehicleUpdateAndConfigurationManagement"
-         ,  "//repo_projects/pProjectFull/main_LATEST:SwcServiceEcuM"
-         ,  "//repo_projects/pProjectFull/main_LATEST:SwcServiceEthTp"
+            "//repo_projects/pProjectVirtualEcu/main_LATEST:common"
+         ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:aapFunctionalCluster_CommunicationManagement"
+         ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:aapFunctionalCluster_Core"
+         ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:aapFunctionalCluster_Cryptography"
+         ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:aapFunctionalCluster_DiagnosticManagement"
+         ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:aapFunctionalCluster_ExecutionManagement"
+         ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:aapFunctionalCluster_Firewall"
+         ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:aapFunctionalCluster_IntrusionDetectionSystemManager"
+         ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:aapFunctionalCluster_LogAndTrace"
+         ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:aapFunctionalCluster_NetworkManagement"
+         ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:aapFunctionalCluster_Persistency"
+         ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:aapFunctionalCluster_PlatformHealthManagement"
+         ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:aapFunctionalCluster_RawDataStream"
+         ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:aapFunctionalCluster_Registry"
+         ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:aapFunctionalCluster_StateManagement"
+         ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:aapFunctionalCluster_TimeSynchronization"
+         ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:aapFunctionalCluster_UpdateAndConfigurationManagement"
+         ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:aapFunctionalCluster_VehicleUpdateAndConfigurationManagement"
+         ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:SwcServiceEcuM"
+         ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:SwcServiceEthTp"
       ]
    ,  visibility = ["//visibility:public"]
 )
