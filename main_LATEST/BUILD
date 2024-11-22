@@ -308,12 +308,16 @@ cc_library(
 
 cc_library(
       name = "SwcServiceEthTp"
-   ,  srcs = ["source/SwcServiceEthTp/SwcServiceEthTp.cpp"]
+   ,  srcs = [
+            "source/SwcServiceEthTp/SwcServiceEthTp.cpp"
+         ,  "source/SwcServiceEthTp/CfgMcalEth.cpp"
+      ]
    ,  deps = [
             "//repo_projects/pProjectVirtualEcu/main_LATEST:common"
       ]
    ,  hdrs = [
             "source/SwcServiceEthTp/infClientSwcServiceEthTp.hpp"
+         ,  "source/SwcServiceEthTp/infClientCfgMcalEth.hpp"
       ]
    ,  includes   = ["./source/SwcServiceEthTp"]
    ,  visibility = ["//visibility:public"]
