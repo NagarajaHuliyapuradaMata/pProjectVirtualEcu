@@ -7,7 +7,8 @@ load(
 cc_library(
       name = "common"
    ,  hdrs = [
-            "source/common/TypesStd.hpp"
+            "source/common/ProjectSystem.hpp"
+         ,  "source/common/TypesStd.hpp"
       ]
    ,  includes   = ["./source/common"]
    ,  visibility = ["//visibility:public"]
@@ -120,6 +121,7 @@ cc_library(
    ,  deps = [
             "//repo_projects/pProjectVirtualEcu/main_LATEST:common"
          ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:aapFunctionalCluster_DiagnosticManagement"
+         ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:SwcApplDigitalTwinMotorPMSM"
          ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:SwcServiceEcuM"
          ,  "//repo_projects/pProjectVirtualEcu/main_LATEST:SwcServiceEthTp"
       ]
@@ -290,6 +292,19 @@ cc_library(
          ,  "source/aapFunctionalCluster_VehicleUpdateAndConfigurationManagement/interface_VehicleUpdateAndConfigurationManagement_VehicleStateManager.hpp"
       ]
    ,  includes   = ["./source/aapFunctionalCluster_VehicleUpdateAndConfigurationManagement"]
+   ,  visibility = ["//visibility:public"]
+)
+
+cc_library(
+      name = "SwcApplDigitalTwinMotorPMSM"
+   ,  srcs = ["source/SwcApplDigitalTwinMotorPMSM/SwcApplDigitalTwinMotorPMSM.cpp"]
+   ,  deps = [
+            "//repo_projects/pProjectVirtualEcu/main_LATEST:common"
+      ]
+   ,  hdrs = [
+            "source/SwcApplDigitalTwinMotorPMSM/infClientSwcApplDigitalTwinMotorPMSM.hpp"
+      ]
+   ,  includes   = ["./source/SwcApplDigitalTwinMotorPMSM"]
    ,  visibility = ["//visibility:public"]
 )
 
